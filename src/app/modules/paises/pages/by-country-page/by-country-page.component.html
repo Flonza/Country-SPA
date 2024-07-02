@@ -1,0 +1,13 @@
+<h2 class="text-3xl text-right mb-3">Busqueda por el nombre del país</h2>
+<div class="row my-3">
+    <div class="col">
+        <app-search-box [placeholder]="'Ingrese el nombre del país.'" 
+        (onDebounce)="searchBy($event)" [valorInicial]="historial"></app-search-box>
+    </div>
+</div>
+<hr>
+<div class="row mt-3">
+    <div class="col">
+        <app-table-paises [cargando]="cargando" [paises]="paises"></app-table-paises>
+    </div>
+</div>
