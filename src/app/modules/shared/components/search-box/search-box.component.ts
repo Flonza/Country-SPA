@@ -7,7 +7,7 @@ import { Subject, Subscription, debounceTime } from 'rxjs';
   styleUrls: ['./search-box.component.css']
 })
 
-export class SearchBoxComponent implements OnInit, OnDestroy{  
+export class SearchBoxComponent implements OnInit, OnDestroy{
   private debouncer: Subject<string> = new Subject<string>();
   private debouncerSuscripcion?: Subscription;
   @Input()
@@ -18,13 +18,13 @@ export class SearchBoxComponent implements OnInit, OnDestroy{
   onDebounce = new EventEmitter<string>();
   @Input()
   valorInicial: string = '';
- 
+
   ngOnInit(): void {
-    this.debouncerSuscripcion = 
+    this.debouncerSuscripcion =
     this.debouncer.pipe(debounceTime(800))
     .subscribe( term => {
       this.onDebounce.emit(term)
-      console.log("Bucando: " + term)
+      console.log("Searching: " + term)
     })
   }
 
