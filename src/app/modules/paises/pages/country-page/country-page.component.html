@@ -15,7 +15,7 @@
               <rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
             </mask>
           </defs>
-          
+
           <g>
             <g class="pl__ring-rotate">
               <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
@@ -26,7 +26,7 @@
               <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
             </g>
           </g>
-          
+
           <g>
             <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
               <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
@@ -51,7 +51,7 @@
               <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
             </g>
           </g>
-          
+
           <g>
             <g transform="translate(64,28)">
               <g class="pl__arrows" transform="rotate(45,16,52)">
@@ -78,44 +78,44 @@
 <div class="row col-12 border-solid border-l-2 border-gray-400 py-3" *ngIf="pais; else info">
     <div class="row">
         <div class="col-12">
-          <h2 class="text-2xl text-right mb-3">Mas acerca de: <span class="ml-2 text-3xl font-extrabold">{{ pais.name.common }}</span></h2>
+          <h2 class="text-2xl text-right mb-3">More about: <span class="ml-2 text-3xl font-extrabold">{{ pais.name.common }}</span></h2>
           <hr>
         </div>
       </div>
-    
+
       <div class="row mt-3">
         <div class="col-4">
-          <h3 class="text-2xl mb-3">Bandera</h3>
+          <h3 class="text-2xl mb-3">Flag</h3>
           <img [src]="pais.flags.svg" [alt]="pais.name.common" class="img-thumbnail">
         </div>
         <div class="col">
-          <h3 class="text-2xl text-right mb-2">Información:</h3>
+          <h3 class="text-2xl text-right mb-2">Information:</h3>
           <ul class="list-group">
             <li class="list-group-item">
               <strong>Capital:</strong> {{pais.capital}}
             </li>
             <li class="list-group-item">
-              <strong>Población:</strong> {{ pais.population | number }}
+              <strong>Population:</strong> {{ pais.population | number }}
             </li>
             <li class="list-group-item">
-              <strong>Código:</strong> {{ pais.cca3 }}
+              <strong>Code:</strong> {{ pais.cca3 }}
             </li>
             <li class="list-group-item">
-                <strong>Numero del país:</strong> {{pais.ccn3}}
+                <strong>Country number:</strong> {{pais.ccn3}}
             </li>
             <li class="list-group-item">
-                <strong>Continente:</strong> {{pais.region}}
+                <strong>Continent:</strong> {{pais.region}}
             </li>
             <li class="list-group-item">
-              <strong>Zona horaria:</strong> {{pais.timezones}}
+              <strong>Time zone:</strong> {{pais.timezones}}
             </li>
           </ul>
         </div>
       </div>
-    
+
       <div class="row mt-2">
         <div class="col">
-          <h3>Traducciones</h3>
+          <h3>Translations</h3>
           <div class="d-flex flex-wrap">
             <span class="badge bg-primary m-1">{{ pais.translations['ara'].common }}</span>
             <span class="badge bg-primary m-1">{{ pais.translations['bre'].common }}</span>
@@ -138,9 +138,9 @@
               <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
               </svg>
-              Ver ubicación geográfica.
+              See geographic location.
             </button>
           </a>
         </div>
-      </div>      
+      </div>
 </div>

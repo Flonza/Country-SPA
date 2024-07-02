@@ -3,11 +3,11 @@
     <table class="table table-primary table-hover">
       <tr class="text-center">
           <th>#</th>
-          <th>Icono</th>
-          <th>Bandera</th>
-          <th>Nombre</th>
+          <th>Icon</th>
+          <th>Flag</th>
+          <th>Name</th>
           <th>Capital</th>
-          <th>Poblacion</th>
+          <th>Population</th>
           <th></th>
       </tr>
       <tbody>
@@ -25,7 +25,7 @@
     <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente" class="text-center"></pagination-controls>
   </div>
     <div class="alert alert-warning text-center" *ngIf="paises.length === 0">
-        <h3>No hay paises para mostrar</h3>
+        <h3>There are no countries to show.</h3>
     </div>
 </ng-template>
 <!--Loader-->
@@ -46,7 +46,7 @@
                   <rect x="28" y="28" width="104" height="104" fill="url(#grad)"></rect>
                 </mask>
               </defs>
-              
+
               <g>
                 <g class="pl__ring-rotate">
                   <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
@@ -57,7 +57,7 @@
                   <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(193,90%,55%)" stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round" transform="rotate(-45,80,80)"></circle>
                 </g>
               </g>
-              
+
               <g>
                 <g stroke-width="4" stroke-dasharray="12 12" stroke-dashoffset="12" stroke-linecap="round" transform="translate(80,80)">
                   <polyline class="pl__tick" stroke="hsl(223,10%,90%)" points="0,2 0,14" transform="rotate(-135,0,0) translate(0,40)"></polyline>
@@ -82,7 +82,7 @@
                   <polyline class="pl__tick" stroke="hsl(223,90%,80%)" points="0,2 0,14" transform="rotate(180,0,0) translate(0,40)"></polyline>
                 </g>
               </g>
-              
+
               <g>
                 <g transform="translate(64,28)">
                   <g class="pl__arrows" transform="rotate(45,16,52)">
@@ -102,9 +102,9 @@
             </svg>
           </div>
         </div>
-        <h3 class="text-center font-bold text-2xl">Buscando...</h3>
+        <h3 class="text-center font-bold text-2xl">Searching...</h3>
       </div>
 </ng-container>
 
-   
+
 
